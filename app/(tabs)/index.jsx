@@ -4,6 +4,7 @@ const App = () => {
 
     const logo = require('../../assets/images/logo.png');
     const cards = require('../../assets/images/cards.png');
+    const path = require('../../assets/images/path.png');
 
   return (
     <View style={styles.container}>
@@ -11,6 +12,7 @@ const App = () => {
       <Image source={cards} style={styles.cardsimage} resizeMode='contain'/>
       <Text style={styles.DiscoverText}>Discover Endless</Text>
       <Text style={styles.PossibilitiesText}> Possibilities with <Text style={styles.AoraText}>Aora</Text></Text>
+      <Image source={path} style={styles.pathimage} resizeMode='contain'/>
       <Text style={styles.MeetsText}>Where Creativity Meets Innovation: Embark on</Text>
       <Text style={styles.JourneyText}>a Journey of Limitless Exploration with Aora</Text>
       <Pressable style={styles.EmailButton}>
@@ -27,6 +29,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: '10%',
     backgroundColor: 'black',
+    alignContent: 'center'
   },
   image: {
    width: 193,
@@ -54,6 +57,14 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontFamily: 'Poppins',
     alignSelf: 'center',
+  },
+  pathimage: {
+    color: '#FFA300',
+    fontFamily: 'Poppins',
+    marginLeft: 200,
+    width: 100,
+    marginTop: -10,
+    alignSelf: 'center'
   },
   PossibilitiesText: {
      color: 'white',
